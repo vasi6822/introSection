@@ -1,0 +1,183 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+}
+
+/* NAVBAR */
+
+
+.container-fluid {
+    padding: 0.5em 1em;
+}
+
+.nav-link {
+    margin: 0 1em;
+}
+
+.dropdown-menu img {
+    position: relative;
+    margin: 1em 0 1em 1em;
+    width: 10%;
+}
+
+.dropdown-menu a {
+    display: inline;
+    margin: 0 0 0 1em; 
+}
+
+.features-drop {
+    margin: 0 0 0 -40px;
+}
+.company-drop {
+    margin: 0 0 0 -25px;
+}
+
+.up {
+    display: none;
+}
+
+.btn-login, .btn-register {
+    border: none;
+    background-color:hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    padding: 0.5em 1.5em;
+    border-radius: 1em;
+}
+
+.btn-register {
+    border: 2px solid hsl(0, 0%, 41%)
+}
+
+
+.btn-login:hover, .btn-register:hover {
+    color: hsl(0, 0%, 8%);
+    border-color:  hsl(0, 0%, 8%);
+}
+
+@media (max-width: 993px) {
+
+
+    .navbar-collapse {
+        position: relative;
+        right: 0;
+    }
+
+    .dropdown-menu img {
+        width: 3%;
+    }
+    .features-drop {
+        margin: 0;
+    }
+    .company-drop {
+        margin: 0;
+    }
+    .company-drop li {
+        margin: 0.5em 0;
+    }
+
+    .btn-login, .btn-register {
+        display: block;
+        width: 90%;
+        margin: 1em auto;
+        background-color: white;
+    }
+    
+}
+
+
+/* BODY */
+
+.col {
+    position: relative;
+}
+
+.details {
+    margin-right: 120px;
+}
+
+.title {
+    font-weight: 700;
+    color: black;
+    font-size: 5.4em;
+    margin: 1.3em 0 0.5em 0;
+}
+
+.info {
+    font-size: 1.1em;
+    width: 80%;
+}
+
+.cta {
+    font-weight: 700;
+    display: block;
+    background-color: black;
+    color: white;
+    border-radius: 0.8em;
+    padding: 0.7em 2em;
+    font-size: 1.2em;
+    margin: 3em 0;
+}
+
+.cta:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: black;
+    border: solid 2px black;
+}
+
+
+.clients {
+    position: relative;
+    bottom: -6%;
+}
+
+.clients img {
+    margin: 0 1em;
+}
+
+.heroImg {
+    width: 90%;
+}
+
+.mobileImg {
+    display: none;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+@media (max-width: 1399px) {
+    
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        
+    }
+    .container {
+        display: inline;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .info, .cta {
+        display: inline-block;
+    }
+    .button {
+        display: block;
+    }
+
+    .heroImg {
+        display: none;
+    }
+    .mobileImg {
+        margin: 3em 0;
+        display: inline;
+        width: 100%;
+    }
+}
